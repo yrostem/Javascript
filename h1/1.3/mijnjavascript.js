@@ -1,7 +1,7 @@
-var a = 10;
-if (a > 9){
-    console.log("Hallo is groter dan 9");
+var mijnauto = {
+    merk: "Ford",
+    Type: "Mondeo",
+    aantalWielen: 4,
+    kleur: "Blauw"
 }
-for (var i=0; i<10; i++){
-    console.log("I heeft nu de waarde: " + i);
-}
+console.log(mijnauto.kleur);
