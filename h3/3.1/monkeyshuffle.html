@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monkeyshuffle</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+    img{
+        width: 300px;
+        height: 300px;
+    }
+</style>
+<script>
+</script>
+<body>
+<h1>Monkeyshuffle</h1>
+<div id="pics">
+<img src="img/1.jpg">
+<img src="img/3.jpg">
+<img src="img/4.jpg">
+<img src="img/5.jpg">
+<img src="img/2.jpg">
+<img src="img/6.jpg">
+<img src="img/7.jpg">
+<img src="img/8.jpg">
+<img src="img/9.jpg">
+</div>
+<script>
+    var plaatjes = document.getElementsByTagName("img");
+    var shuffle = 0;
+    for (var i=0; i < plaatjes.length; i++){
+        shuffle =  Math.floor(Math.random()*9)+1;
+        plaatjes[i].src = "img/" + shuffle + ".jpg";
+    }
+</script>
+</body>
+</html>
